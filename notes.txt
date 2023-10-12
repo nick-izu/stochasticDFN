@@ -1,1 +1,1 @@
-python run_flow.py -name /dfnWorks/work/stochasticDFN -input 4_user_defined_ellipses.txt -ncpu 32
+python run_flow.py -name /dfnWorks/work/stochasticdfn -input 4_user_defined_ellipses.txt -ncpu 32
