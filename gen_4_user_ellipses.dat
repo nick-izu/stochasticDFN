@@ -25,15 +25,15 @@ outputAllRadii: 0
 */
                       
 
-domainSize: {1000,1000,1000} 
+domainSize: {100,100,100} 
     /* Mandatory Parameter.
         Creates a domain with dimension x*y*z centered at the origin.*/
 
 numOfLayers: 0    //number of layers
 
 layers: 
-{-500,0}
-{0,500}
+{-50,0}
+{0,50}
 
 
 /*  Layers need to be listed line by line
@@ -47,11 +47,11 @@ layers:
 numOfRegions: 1
 
 regions:
-{-500, 500, -500, 500, -500, 500}
+{-50, 50, -50, 50, -50, 50}
 
 orientationOption: 0
 
-h: 1
+h: 0.5
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -93,7 +93,7 @@ seed: 200
     //Seed for random generator. 
         
 
-domainSizeIncrease: {100,100,100} 
+domainSizeIncrease: {10,10,10} 
           //temporary size increase for inserting fracture centers outside domain
           //increases the entire width by this ammount. So, {1,1,1} will increase
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
@@ -271,10 +271,10 @@ econst: {10, 10, 10}  // Constant radius, defined per family
 // NOTE: Number of elements must match number 
 //       of ellipse families (first number in nShape)
 
-emin: {30} // Minimum radius for each ellipse family. 
+emin: {5} // Minimum radius for each ellipse family. 
              // For power law distributions. 
 
-emax: {564}  // Maximum radius for each ellipse family.
+emax: {56}  // Maximum radius for each ellipse family.
                   // For power law distributions. 
                     
 ealpha: {2.4} // Alpha. Used in truncated power-law 
@@ -297,7 +297,7 @@ nFamRect: 0
     //Having this option = 0 will ignore all rectangle family variables
 
 
-rLayer: {0,0}
+rLayer: {0}
     /* Defines which domain the family belings to.
      Layer 0 is the entire domain.
      Layers numbered > 0 coorespond to layers defined above
@@ -305,7 +305,7 @@ rLayer: {0,0}
 
 
 /*rdist is a mandatory parameter if using statistically generated rectangles */
-rdistr: {2,3}   /*  Rectangle statistical distribution options:
+rdistr: {2}   /*  Rectangle statistical distribution options:
                         1 - lognormal distribution
                         2 - truncated power law distribution 
                         3 - exponential distribution
