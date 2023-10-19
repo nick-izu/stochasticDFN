@@ -28,9 +28,9 @@ DFN.add_variable_to_mesh("trans,", "transmissivity.dat", "full_mesh.inp")
 #exit()
 
 #dfnFlow
-DFN.dfn_flow()
+#DFN.dfn_flow()
 
 
 #dfntrans
-DFN.dfn_trans()
+#DFN.dfn_trans()
 
