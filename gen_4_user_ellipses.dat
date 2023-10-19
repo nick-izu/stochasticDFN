@@ -199,7 +199,7 @@ ebetaDistribution: {1}   /* Beta is the rotation around the polygon's normal
                     1 - constant angle (specefied below by "ebeta")    */                
     
     
-e_p32Targets: {0.6} 
+e_p32Targets: {0.5} 
 /* Elliptical families target fracture intensity per family.
 When using stopCondition = 1 (defined at the top of the input file), families will 
 be inserted until the families desired fracture intensity has been reached. 
@@ -232,7 +232,7 @@ ephi: {2.78}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {5}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
