@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {4}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {3}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {8} /*Number of vertices used in creating each elliptical 
