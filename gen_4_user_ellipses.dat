@@ -51,7 +51,7 @@ regions:
 
 orientationOption: 0
 
-h: 0.01
+h: 1
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -89,7 +89,7 @@ visualizationMode: 0
    1: produce only first round of triangulations. In this case no 
    modeling of flow and transport is possible. */ 
 
-seed: 200
+seed: 0
     //Seed for random generator. 
         
 
@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {3}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {8} /*Number of vertices used in creating each elliptical 
@@ -225,7 +225,7 @@ eAngleOption: 0     /* All angles for ellipses:
 etheta: {1.65} /*Ellipse fracture orientation.
                      The angle the normal vector makes with the z-axis */
 
-ephi: {2.78}   /* Ellipse fracture orientation.
+ephi: {1.78}   /* Ellipse fracture orientation.
                     The angle the projection of the normal onto the x-y plane
                     makes with the x-axis */
 
@@ -262,7 +262,7 @@ eExpMin: {1}  //Mean value for Exponential  Distribution
 //===========================================================================
 //    Options Specific For Constant Size of ellipses (edistr=4):
 
-econst: {10, 10, 10}  // Constant radius, defined per family     
+econst: {10}  // Constant radius, defined per family     
                
 //===========================================================================
 // Options Specific For Ellipse Truncated Power-Law Distribution (edistr=2)
@@ -271,10 +271,10 @@ econst: {10, 10, 10}  // Constant radius, defined per family
 // NOTE: Number of elements must match number 
 //       of ellipse families (first number in nShape)
 
-emin: {5} // Minimum radius for each ellipse family. 
+emin: {10} // Minimum radius for each ellipse family. 
              // For power law distributions. 
 
-emax: {56}  // Maximum radius for each ellipse family.
+emax: {75}  // Maximum radius for each ellipse family.
                   // For power law distributions. 
                     
 ealpha: {2.4} // Alpha. Used in truncated power-law 
