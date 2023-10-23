@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {4}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {8} /*Number of vertices used in creating each elliptical 
@@ -232,7 +232,7 @@ ephi: {1.78}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {10}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
