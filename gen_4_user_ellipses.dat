@@ -68,7 +68,7 @@ removeFracturesLessThan: 0
 //==========================================================================//
 /* Fracture Network Parameters:                                             */
 
-tripleIntersections: 1
+tripleIntersections: 0
 /* Options:     0: Off
                 1: On    */
 
@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {5}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {3}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {8} /*Number of vertices used in creating each elliptical 
