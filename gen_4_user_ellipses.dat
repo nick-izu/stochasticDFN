@@ -82,7 +82,7 @@ printRejectReasons: 1
         1: print all rejection reasons to screen
 */
 
-visualizationMode: 0
+visualizationMode: 1
 /* Options: 0 or 1 
    Used during meshing: 
    0: creates a fine mesh, according to h parameter;
@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {2.5}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {8} /*Number of vertices used in creating each elliptical 
@@ -232,7 +232,7 @@ ephi: {1.78}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {5}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
@@ -519,7 +519,7 @@ constantPermeability: 1e-12  //Constant permeability for all fractures
 //=============================================================================
 
 
- keepIsolatedFractures: 0 
+ keepIsolatedFractures: 1 
 /*  0 - Remove any isolated fracture (not clusters)
     1 - Keep all fractures in the domain
 */
