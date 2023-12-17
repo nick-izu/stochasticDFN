@@ -51,7 +51,7 @@ regions:
 
 orientationOption: 0
 
-h: 3
+h: 2
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -519,7 +519,7 @@ constantPermeability: 1e-12  //Constant permeability for all fractures
 //=============================================================================
 
 
- keepIsolatedFractures: 1 
+ keepIsolatedFractures: 0 
 /*  0 - Remove any isolated fracture (not clusters)
     1 - Keep all fractures in the domain
 */
