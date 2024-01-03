@@ -214,7 +214,7 @@ be complete.
 easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
-enumPoints: {8} /*Number of vertices used in creating each elliptical 
+enumPoints: {30} /*Number of vertices used in creating each elliptical 
                            fracture family. Number of elements must match number 
                            of ellipse families (first number in nShape) */
 
@@ -271,10 +271,10 @@ econst: {10}  // Constant radius, defined per family
 // NOTE: Number of elements must match number 
 //       of ellipse families (first number in nShape)
 
-emin: {20} // Minimum radius for each ellipse family. 
+emin: {10} // Minimum radius for each ellipse family. 
              // For power law distributions. 
 
-emax: {85}  // Maximum radius for each ellipse family.
+emax: {80}  // Maximum radius for each ellipse family.
                   // For power law distributions. 
                     
 ealpha: {2.2} // Alpha. Used in truncated power-law 
