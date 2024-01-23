@@ -185,7 +185,7 @@ eLayer: {0}
 eRegion: {0}
 
 //edist is a mandatory parameter if using statistically generated ellipses 
-edistr: {2}   /* Ellipse statistical distribution options:
+edistr: {3}   /* Ellipse statistical distribution options:
                       1 - lognormal distribution
                       2 - truncated power law distribution   
                       3 - exponential distribution
@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {0.5}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {20} /*Number of vertices used in creating each elliptical 
@@ -232,7 +232,7 @@ ephi: {2.38}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {10}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
@@ -255,9 +255,9 @@ esd: {.5} // Standard deviation for lognormal distributions of ellipses
 //     Mandatory Parameters if using ellispes with exponential distribution 
 
 
-eExpMean: {2}  //Mean value for Exponential  Distribution     
-eExpMax: {3}  //Mean value for Exponential  Distribution     
-eExpMin: {1}  //Mean value for Exponential  Distribution     
+eExpMean: {25}  //Mean value for Exponential  Distribution     
+eExpMax: {45}  //Mean value for Exponential  Distribution     
+eExpMin: {5}  //Mean value for Exponential  Distribution     
 
 //===========================================================================
 //    Options Specific For Constant Size of ellipses (edistr=4):
