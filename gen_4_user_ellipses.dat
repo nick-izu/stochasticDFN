@@ -51,7 +51,7 @@ regions:
 
 orientationOption: 0
 
-h: 0.5
+h: 0.25
   /* Minimum fracture length scale(meters)
     Any fracture with a feature, such as and intersection, of less than h will be rejected. */
 
@@ -68,11 +68,11 @@ removeFracturesLessThan: 0
 //==========================================================================//
 /* Fracture Network Parameters:                                             */
 
-tripleIntersections: 0
+tripleIntersections: 1
 /* Options:     0: Off
                 1: On    */
 
-/* multipleClusters: 0 */
+/* multipleClusters: 1 */
 
 
 printRejectReasons: 1
@@ -107,7 +107,7 @@ keepOnlyLargestCluster: 1
            the specified boundary faces in boundaryFaces option below
     */
 
-ignoreBoundaryFaces: 0  
+ignoreBoundaryFaces: 1  
 /*
      0 = use boundaryFaces option below 
 
@@ -211,7 +211,7 @@ be complete.
 // Parameters used by all stochastic ellipse families 
 // Mandatory Parameters if using statistically generated ellipses  
 
-easpect: {0.5}  /* Aspect ratio. Used for lognormal and truncated 
+easpect: {1}  /* Aspect ratio. Used for lognormal and truncated 
                     power law distribution. */
 
 enumPoints: {20} /*Number of vertices used in creating each elliptical 
@@ -232,7 +232,7 @@ ephi: {2.38}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {10}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
@@ -255,8 +255,8 @@ esd: {.5} // Standard deviation for lognormal distributions of ellipses
 //     Mandatory Parameters if using ellispes with exponential distribution 
 
 
-eExpMean: {25}  //Mean value for Exponential  Distribution     
-eExpMax: {45}  //Mean value for Exponential  Distribution     
+eExpMean: {20}  //Mean value for Exponential  Distribution     
+eExpMax: {200}  //Mean value for Exponential  Distribution     
 eExpMin: {5}  //Mean value for Exponential  Distribution     
 
 //===========================================================================
@@ -474,7 +474,7 @@ Also, coordinates must be co-planar */
 
 //NOTE: Only one aperture type may be used at a time 
 
-aperture: 3  //choise of aperture option described above
+aperture: 4  //choise of aperture option described above
 
 //(**** 1)meanAperture and stdAperture for using LogNormal distribution.********)
 meanAperture:  -3 /*Mean value for aperture using  
@@ -498,7 +498,7 @@ constantAperture: 1e-3  //Sets constant aperture for all fractures
 /*(******** 4)lengthCorrelatedAperture, aperture is defined as a function of 
        fracture size *******************/
        
-lengthCorrelatedAperture: {5e-5, 0.5}
+lengthCorrelatedAperture: {2.5e-5, 0.4}
     /*Length Correlated Aperture Option:
       Aperture is calculated by: b=F*R^k,
       where F is a first element in lengthCorrelatedAperture, 
