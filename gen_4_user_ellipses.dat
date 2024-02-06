@@ -93,7 +93,7 @@ seed: 0
     //Seed for random generator. 
         
 
-domainSizeIncrease: {20,20,20} 
+domainSizeIncrease: {200,200,200} 
           //temporary size increase for inserting fracture centers outside domain
           //increases the entire width by this ammount. So, {1,1,1} will increase
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
@@ -498,7 +498,7 @@ constantAperture: 1e-3  //Sets constant aperture for all fractures
 /*(******** 4)lengthCorrelatedAperture, aperture is defined as a function of 
        fracture size *******************/
        
-lengthCorrelatedAperture: {2.5e-5, 0.4}
+lengthCorrelatedAperture: {2.5e-5, 0.5}
     /*Length Correlated Aperture Option:
       Aperture is calculated by: b=F*R^k,
       where F is a first element in lengthCorrelatedAperture, 
