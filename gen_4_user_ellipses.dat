@@ -99,7 +99,7 @@ domainSizeIncrease: {48,48,48}
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
 
 
-keepOnlyLargestCluster: 1
+keepOnlyLargestCluster: 0
     /* 0 = Keep any clusters which connects the specified 
            boundary faces in boundaryFaces option below
        
@@ -232,7 +232,7 @@ ephi: {2.38}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {25}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
@@ -255,9 +255,9 @@ esd: {.5} // Standard deviation for lognormal distributions of ellipses
 //     Mandatory Parameters if using ellispes with exponential distribution 
 
 
-eExpMean: {20}  //Mean value for Exponential  Distribution     
+eExpMean: {10}  //Mean value for Exponential  Distribution     
 eExpMax: {200}  //Mean value for Exponential  Distribution     
-eExpMin: {5}  //Mean value for Exponential  Distribution     
+eExpMin: {2}  //Mean value for Exponential  Distribution     
 
 //===========================================================================
 //    Options Specific For Constant Size of ellipses (edistr=4):
