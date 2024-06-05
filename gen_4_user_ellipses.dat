@@ -222,10 +222,10 @@ eAngleOption: 0     /* All angles for ellipses:
                        0 - radians (Must use numerical value for PI)
                        1 - degrees  */
                         
-etheta: {4.712} /*Ellipse fracture orientation.
+etheta: {6.2} /*Ellipse fracture orientation.
                      The angle the normal vector makes with the z-axis */
 
-ephi: {3.28}   /* Ellipse fracture orientation.
+ephi: {2.48}   /* Ellipse fracture orientation.
                     The angle the projection of the normal onto the x-y plane
                     makes with the x-axis */
 
