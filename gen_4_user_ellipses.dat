@@ -107,7 +107,7 @@ keepOnlyLargestCluster: 0
            the specified boundary faces in boundaryFaces option below
     */
 
-ignoreBoundaryFaces: 0  
+ignoreBoundaryFaces: 1  
 /*
      0 = use boundaryFaces option below 
 
@@ -232,7 +232,7 @@ ephi: {3.28}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {25}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
