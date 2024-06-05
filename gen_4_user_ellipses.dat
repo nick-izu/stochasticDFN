@@ -99,7 +99,7 @@ domainSizeIncrease: {48,48,48}
           //the domain by adding .5 to the +x, and subbtracting .5 to the -x, etc
 
 
-keepOnlyLargestCluster: 0
+keepOnlyLargestCluster: 1
     /* 0 = Keep any clusters which connects the specified 
            boundary faces in boundaryFaces option below
        
@@ -107,7 +107,7 @@ keepOnlyLargestCluster: 0
            the specified boundary faces in boundaryFaces option below
     */
 
-ignoreBoundaryFaces: 1  
+ignoreBoundaryFaces: 0  
 /*
      0 = use boundaryFaces option below 
 
@@ -232,7 +232,7 @@ ephi: {3.28}   /* Ellipse fracture orientation.
 ebeta: {0}   /* rotation around the normal vector */
 
 
-ekappa: {25}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
+ekappa: {1}  /*Parameter for the fisher distribnShaprutions. The bigger, the more 
                         similar (less diverging) are the elliptical familiy's
                         normal vectors */                
 
