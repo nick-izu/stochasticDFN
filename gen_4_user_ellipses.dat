@@ -116,7 +116,7 @@ ignoreBoundaryFaces: 0
 */
      
           
-boundaryFaces: {1,1,0,0,0,0}
+boundaryFaces: {1,1,1,1,1,1}
 /*  DFN will only keep clusters with connections to domain boundaries which are set to 1:
 
     boundaryFaces[0] = +X domain boundary
@@ -137,6 +137,10 @@ rejectsPerFracture: 50  /*If fracture is rejected, it will be re-translated to a
                          (Set to 1 to ignore this feature)    */
 
 
+keepIsolatedFractures: 1 
+/*  0 - Remove any isolated fracture (not clusters)
+    1 - Keep all fractures in the domain
+*/
 
 
 
@@ -199,7 +203,7 @@ ebetaDistribution: {1}   /* Beta is the rotation around the polygon's normal
                     1 - constant angle (specefied below by "ebeta")    */                
     
     
-e_p32Targets: {0.5} 
+e_p32Targets: {0.2} 
 /* Elliptical families target fracture intensity per family.
 When using stopCondition = 1 (defined at the top of the input file), families will 
 be inserted until the families desired fracture intensity has been reached. 
@@ -519,11 +523,7 @@ constantPermeability: 1e-12  //Constant permeability for all fractures
 //=============================================================================
 
 
- keepIsolatedFractures: 0 
-/*  0 - Remove any isolated fracture (not clusters)
-    1 - Keep all fractures in the domain
-*/
-
+ 
 
 /*===========================================================================*/
 /*===========================================================================*/
